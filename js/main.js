@@ -5,7 +5,7 @@ $(document).ready(function () {
         dots: true,
         slidesToShow: 2,
         slidesToScroll: 2,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 2000,
         speed: 1000,
         easing: 'ease',
@@ -24,7 +24,7 @@ $(document).ready(function () {
         dots: true,
         slidesToShow: 3,
         slidesToScroll: 3,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 2000,
         speed: 1000,
         easing: 'ease',
@@ -46,6 +46,29 @@ $(document).ready(function () {
     });
 
     $("#input__tel").mask("+38(999)999-9999");
+
+    AOS.init({
+        // Global settings:
+        disable: 'phone', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: 'aos-init', // class applied after initialization
+        animatedClassName: 'aos-animate', // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 200, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 600, // values from 0 to 3000, with step 50ms
+        easing: 'ease', // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+    });
 
 
     var header = $("#header"),
@@ -99,18 +122,32 @@ $(document).ready(function () {
         $(".content").toggleClass("active");
     });
 
+    // Modal
+    let modalClose = $("[data-close]");
+
+    modalClose.on("click", function (event) {
+        event.preventDefault();
+
+        let modalParent = $(this).parents(".modal");
+        modalParent.removeClass("show");
+        $("body").removeClass("no-scroll");
+    });
+
     // Calculator
 
-    const inputs = document.getElementsByTagName('input');
     const span = document.getElementById('final__price');
+    let price = 0;
 
-    window.addEventListener("keyup", (event) => {
-
-        for (let i = 0; i < inputs.length; i++){
-            if(event.target === inputs[i]){
-                span.innerHTML = inputs[i].value;
-            }
+    $('#calculator').on('keyup', function (){
+        price =
+            document.getElementById('width').value/100 *
+            document.getElementById('height').value/100 *
+            document.getElementById('deep').value * 150;
+        if(document.getElementById('width').value && document.getElementById('height').value && document.getElementById('deep').value){
+            span.innerHTML = price
         }
     })
+
+
 
 });

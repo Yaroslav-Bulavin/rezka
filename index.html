@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="fonts/fonts.css">
 </head>
@@ -43,7 +44,7 @@
             </header>
             <section class="intro" id="intro">
                 <div class="container">
-                    <div class="intro__inner">
+                    <div class="intro__inner" data-aos="fade-up-left">
                         <h1 class="intro__title"><span>Алмазная резка</span> бетона</h1>
                         <div class="intro__tel">+38 063 986 33 92</div>
                         <div class="intro__text">
@@ -71,13 +72,16 @@
                         <path style=" stroke:none;fill-rule:nonzero;fill:rgb(65.899658%,70.999146%,21.998596%);fill-opacity:1;" d="M 41.800781 25.78125 C 39.496094 25.765625 38.707031 27.667969 38.847656 29.613281 L 38.851563 54.71875 C 38.925781 57.078125 40.089844 58.527344 42.738281 58.566406 L 56.578125 58.574219 C 58.769531 58.613281 59.957031 58.109375 60.164063 56.308594 L 60.164063 51.957031 C 60.136719 49.945313 58.09375 49.953125 56.695313 49.984375 L 51.007813 49.984375 C 48.75 49.964844 48.230469 49.589844 48.140625 47.363281 L 48.164063 29.53125 C 48.207031 27.449219 47.484375 25.789063 45.179688 25.773438 L 41.800781 25.78125 "/>
                     </g>
                 </symbol>
+                <symbol id="close" viewBox="0 0 512 512">
+                    <g><path d="M257 0C116.39 0 0 114.39 0 255s116.39 257 257 257 255-116.39 255-257S397.61 0 257 0zm126.22 338.79c11.7 11.7 11.7 30.73 0 42.44-11.61 11.6-30.64 11.79-42.44 0L257 297.42l-85.79 83.82c-11.7 11.7-30.73 11.7-42.44 0-11.7-11.7-11.7-30.73 0-42.44l83.8-83.8-83.8-83.8c-11.7-11.71-11.7-30.74 0-42.44 11.71-11.7 30.74-11.7 42.44 0L257 212.58l83.78-83.82c11.68-11.68 30.71-11.72 42.44 0 11.7 11.7 11.7 30.73 0 42.44l-83.8 83.8 83.8 83.79z"/></g>
+                </symbol>
             </svg>
 
 
             <section class="about" id="about">
                 <div class="container">
                     <div class="about__inner">
-                        <div class="about__item">
+                        <div class="about__item" data-aos="fade-right">
                             <h2 class="about__title">О <span>нас</span></h2>
                             <div class="about__text">
                                 <p>Divide have don't man wherein air fourth. Own itself make have night won't make.
@@ -86,7 +90,7 @@
                             </div>
                             <button class="intro__btn intro__btn--about" data-scroll="#connection">Заказать звонок</button>
                         </div>
-                        <div class="about__item about__item--last">
+                        <div class="about__item about__item--last" data-aos="fade-left">
                             <img src="images/about/about2.jpg" alt="" class="about__img">
                         </div>
                     </div>
@@ -95,17 +99,17 @@
             <section class="wedo" id="wedo">
                 <div class="container">
                     <div class="wedo__header">
-                        <h2 class="about__title about__title--wedo">Что мы <span>делаем</span></h2>
+                        <h2 class="about__title about__title--wedo" data-aos="zoom-out-down">Что мы <span>делаем</span></h2>
                     </div>
                     <div class="wedo__inner">
-                        <ul class="wedo__list">
+                        <ul class="wedo__list" data-aos="fade-up-right">
                             <li>Алмазная резка бетона, монолита, кирпича, фсб блоков</li>
                             <li>Вырезание нового дверного/оконного проёма</li>
                             <li>Расширение старого дверного/оконного проёма</li>
                             <li>Вырезание арок, ниш</li>
                             <li>Удаление порожков, бардюров, перемычек, стоек, колонн</li>
                         </ul>
-                        <ul class="wedo__list">
+                        <ul class="wedo__list" data-aos="fade-up-left">
                             <li>Удаление балконных заграждений, ступенек, бетонных стяжек</li>
                             <li>Резка штроб под проводку/канализацию</li>
                             <li>Демонтаж любой сложности</li>
@@ -118,8 +122,8 @@
             <section class="whatit">
                 <div class="container">
                     <div class="whatit__inner">
-                        <h2 class="about__title about__title--whatit">Что такое <span>алмазная резка</span>?</h2>
-                        <div class="whatit__text">
+                        <h2 class="about__title about__title--whatit" data-aos="zoom-out-down">Что такое <span>алмазная резка</span>?</h2>
+                        <div class="whatit__text" data-aos="zoom-in-right">
                             <p>По сути мы вам предлагаем безударный демонтаж несущих и
                                 подпорных перегородок с минимальным шумом и вибрацией настолько
                                 не существенной, что соседка делающая отбивные будет нарушать несущую
@@ -135,9 +139,9 @@
             <section class="works" id="works">
                 <div class="container">
                     <div class="wedo__header wedo__header--works">
-                        <h2 class="about__title about__title--wedo">Наши <span>работы</span></h2>
+                        <h2 class="about__title about__title--wedo" data-aos="fade-up-right">Наши <span>работы</span></h2>
                     </div>
-                        <div class="slider__works">
+                        <div class="slider__works"  data-aos="fade-up-left">
                             <div class="slider__works--item"><img src="images/works/1.jpg" alt=""></div>
                             <div class="slider__works--item"><img src="images/works/2.jpg" alt=""></div>
                             <div class="slider__works--item"><img src="images/works/3.jpg" alt=""></div>
@@ -151,11 +155,11 @@
             </section>
             <section class="reviews" id="reviews">
                 <div class="container">
-                    <div class="wedo__header wedo__header--works">
-                        <h2 class="about__title about__title--wedo reviews"><span>Довольные</span> клиенты</h2>
+                    <div class="wedo__header wedo__header--works" data-aos="fade-up-left">
+                        <h2 class="about__title about__title--wedo reviews" ><span>Довольные</span> клиенты</h2>
                     </div>
                     <div class="reviews__inner">
-                        <div class="slider__reviews">
+                        <div class="slider__reviews" data-aos="fade-up-right">
                             <div class="reviews__item">
                                 <img src="images/reviews/1.jpg" alt="" class="reviews__img">
                                 <img src="images/reviews/icon1.jpg" alt="" class="reviews__icon">
@@ -226,11 +230,11 @@
             </section>
             <section class="price" id="price">
                 <div class="container">
-                    <div class="wedo__header wedo__header--works">
+                    <div class="wedo__header wedo__header--works" data-aos="fade-down">
                         <h2 class="about__title about__title--wedo"><span>Стоимость</span> услуг</h2>
                     </div>
                     <div class="price__inner">
-                        <div class="price__item">
+                        <div class="price__item" data-aos="fade-right">
                             <h3 class="price__title">Демонтажные работы:</h3>
                             <div class="price__content">
                                 <div class="price__content--name">Демонтаж(кирпич)</div>
@@ -261,9 +265,9 @@
                                 <div class="price__content--price">от 26 грн см</div>
                             </div>
                         </div>
-                        <div class="price__item">
+                        <div class="price__item" data-aos="fade-left">
                             <h3 class="price__title price__title--calc">Калькулятор стоимости:</h3>
-                            <div class="calculator">
+                            <div class="calculator" id="calculator">
                                 <label for="calc__select">Выберите материал:</label>
                                 <div class="select">
                                     <select name="material" id="calc__select" class="calc__select">
@@ -289,9 +293,14 @@
             <section class="connection" id="connection">
                 <div class="container">
                     <div class="connection__inner">
-                        <div class="connection__form">
+                        <div class="connection__form" data-aos="zoom-in-right">
                             <h4 class="form__title">Оставьте свои <span>контактные данные</span></h4>
-                            <form action="" method="post" class="connection__forma">
+                            <form action="" method="post" class="connection__forma" id="connection__forma">
+
+                                <input type="hidden" name="project_name" value="Алмазная резка">
+                                <input type="hidden" name="admin_email" value="Betonorezka.almaz@gmail.com">
+                                <input type="hidden" name="form_subject" value="Заявка с сайта">
+
                                 <label for="input__name">Ваше имя:</label>
                                 <input type="text" placeholder="Ваше имя" id="input__name" class="input__name" required>
                                 <label for="input__tel">Ваш телефон:</label>
@@ -299,7 +308,7 @@
                                 <button type="submit">Заказать консультацию</button>
                             </form>
                         </div>
-                        <div class="connection__item">
+                        <div class="connection__item" data-aos="zoom-in-left">
                             <div class="connection__content">
                                 <h2 class="connection__title">Все еще <span>остались вопросы?</span></h2>
                                 <div class="connection__title connection__title--subtitle">Наш специалист готов проконсультировать вас, и ответить на ваши вопросы</div>
@@ -310,6 +319,19 @@
                     </div>
                 </div>
             </section>
+
+            <div class="modal" id="modal">
+                <div class="modal__inner">
+                    <button class="modal__exit" type="button" data-close="close">
+                            <svg class="icon__close">
+                                <use xlink:href="#close"></use>
+                            </svg>
+                    </button>
+                    <h4 class="modal__title">Спасибо вам!</h4>
+                    <h5 class="modal__subtitle">Наш специалист позвонит вам в течении 24 часов</h5>
+                </div>
+            </div>
+
             <footer class="footer">
                 <div class="container">
                     <div class="footer__inner">
@@ -348,6 +370,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/maskinput.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
