@@ -45,7 +45,6 @@ $(document).ready(function () {
         ]
     });
 
-    $("#input__tel").mask("+38 (999) 999-99-99");
 
     AOS.init({
         // Global settings:
