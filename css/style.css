@@ -638,10 +638,13 @@ span {
 .price__item {
     width: 100%;
     max-width: 560px;
-    height: 750px;
+    height: 620px;
     background-color: #fff;
     margin-right: 50px;
     border: 10px solid #ef602d;
+}
+.price__item:first-child {
+    height: 350px;
 }
 .price__item:last-child {
     margin-right: 0;
@@ -689,45 +692,11 @@ span {
     font-size: 50px;
     font-weight: bold;
 }
-/*Select*/
-.select {
-    position: relative;
-    margin-bottom: 40px;
-    width: 400px;
-}
-.select::after {
-    content: "";
-    display: block;
-    border-style: solid;
-    border-width: 6px 5px 0 5px;
-    border-color: #000 transparent transparent transparent;
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    pointer-events: none;
-    z-index: 1;
-}
+
 .calculator {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.select select {
-    display: block;
-    width: 100%;
-    padding: 10px 20px;
-    background: none;
-    border: 1px solid #787878;
-    border-radius: 5px;
-    -webkit-appearance: none;
-    appearance: none;
-    font-family: inherit;
-    font-size: 16px;
-    color: #000;
-}
-.select select:focus {
-    outline: 0;
-    border-color: #ef602d;
 }
 .price__item label {
     font-size: 20px;
@@ -1129,7 +1098,7 @@ input::placeholder {
     .reviews__icon {
         width: 100px;
         height: 100px;
-        bottom: 255px;
+        bottom: 295px;
         left: 60px;
     }
     .slider__reviews .slick-dots {
@@ -1149,7 +1118,7 @@ input::placeholder {
         padding-top: 20px;
     }
     .price__item:first-child {
-        height: 525px;
+        height: 250px;
     }
     .price__title--calc {
         padding-bottom: 15px;
@@ -1158,7 +1127,7 @@ input::placeholder {
         margin-bottom: 20px;
     }
     .price__item:last-child {
-        height: 595px;
+        height: 480px;
     }
     .connection {
         padding: 40px 0;
@@ -1197,36 +1166,7 @@ input::placeholder {
         margin-top: 25px;
     }
 }
-@media (max-width: 740px) and (orientation: landscape) {
-    .reviews__icon {
-        left: 100px;
-        bottom: 225px;
-    }
-    .about__title--wedo.reviews {
-        padding-bottom: 0;
-    }
-    .slider__reviews .slick-dots {
-        bottom: -11px;
-    }
-}
-@media (max-width: 670px) and (orientation: landscape) {
-    .reviews__icon {
-        left: 65px;
-        bottom: 225px;
-    }
-    .footer__text {
-        font-size: 12px;
-    }
-    .footer__tel p span {
-        font-size: 20px;
-    }
-}
-@media (max-width: 645px) and (orientation: landscape) {
-    .reviews__icon {
-        left: 49px;
-        bottom: 285px;
-    }
-}
+
 @media (max-width: 775px) {
     .nav-toggle {
         display: block;
@@ -1302,6 +1242,44 @@ input::placeholder {
     }
     .footer__text {
         font-size: 14px;
+    }
+}
+@media (max-width: 740px) and (orientation: landscape) {
+    .reviews__icon {
+        left: 100px;
+        bottom: 247px;
+    }
+    .about__title--wedo.reviews {
+        padding-bottom: 0;
+    }
+    .slider__reviews .slick-dots {
+        bottom: -25px;
+    }
+}
+@media (max-width: 670px) and (orientation: landscape) {
+    .reviews__icon {
+        left: 65px;
+        bottom: 270px;
+    }
+    .footer__text {
+        font-size: 12px;
+    }
+    .footer__tel p span {
+        font-size: 20px;
+    }
+}
+@media (max-width: 645px) and (orientation: landscape) {
+    .reviews__icon {
+        left: 49px;
+        bottom: 310px;
+    }
+    .slider__reviews .slick-dots {
+        bottom: -10px;
+    }
+}
+@media (max-width: 600px) and (orientation: landscape) {
+    .reviews__icon {
+        opacity: 0;
     }
 }
 @media (max-width: 460px) {
@@ -1386,13 +1364,10 @@ input::placeholder {
     .price__item input {
         width: 320px;
     }
-    .select select {
-        max-width: 350px;
-        margin: 0 auto;
+    .price__item:first-child {
+        height: 280px;
     }
-    .select::after {
-        right: 40px;
-    }
+
     /*Connection*/
     .connection__title {
         font-size: 24px;
@@ -1448,9 +1423,6 @@ input::placeholder {
         font-size: 18px;
         padding-bottom: 40px;
     }
-    .select {
-        width: 310px;
-    }
     .intro__title {
         font-size: 25px;
     }
@@ -1480,6 +1452,7 @@ input::placeholder {
     }
     .reviews__icon {
         left: 90px;
+        bottom: 260px;
     }
     /*Price*/
     .price__title {
@@ -1490,10 +1463,6 @@ input::placeholder {
     }
     .price__item input {
         width: 300px;
-    }
-    /*Select*/
-    .select::after {
-        right: 10px;
     }
     /*Connection*/
     .connection__list p {
@@ -1553,9 +1522,6 @@ input::placeholder {
     .slider__reviews .slick-dots {
         bottom: 0;
     }
-    .select {
-        width: 280px;
-    }
     .connection__title {
         font-size: 21px;
     }
@@ -1609,16 +1575,13 @@ input::placeholder {
         font-size: 17px;
     }
     .price__item {
-        height: 710px;
+        height: 585px;
     }
     .price__item input {
         width: 240px;
     }
     .price__title {
         font-size: 20px;
-    }
-    .select {
-        width: 250px;
     }
     .final__price__title {
         font-size: 18px;

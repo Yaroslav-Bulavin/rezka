@@ -24,7 +24,7 @@ $(document).ready(function () {
         dots: true,
         slidesToShow: 3,
         slidesToScroll: 3,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 2000,
         speed: 1000,
         easing: 'ease',
@@ -45,7 +45,7 @@ $(document).ready(function () {
         ]
     });
 
-    $("#input__tel").mask("+38(999)999-9999");
+    $("#input__tel").mask("+38 (999) 999-99-99");
 
     AOS.init({
         // Global settings:
