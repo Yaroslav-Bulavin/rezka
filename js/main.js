@@ -24,7 +24,7 @@ $(document).ready(function () {
         dots: true,
         slidesToShow: 3,
         slidesToScroll: 3,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 2000,
         speed: 1000,
         easing: 'ease',
@@ -143,10 +143,27 @@ $(document).ready(function () {
             document.getElementById('height').value/100 *
             document.getElementById('deep').value * 150;
         if(document.getElementById('width').value && document.getElementById('height').value && document.getElementById('deep').value){
-            span.innerHTML = price
+            span.innerHTML = Math.round(price)
         }
-    })
+    });
 
+    $("form").submit(function() { //Change
+        var th = $(this);
+        $.ajax({
+            type: "POST",
+            url: "mail.php", //Change
+            data: th.serialize()
+        }).done(function() {
+            $("#modal").addClass("show");
+            $("body").addClass("no-scroll");
+            setTimeout(function() {
+                // Done Functions
+                th.trigger("reset");
+            }, 1000);
+        });
+        return false;
+    });
 
+    $("#input__tel").mask("+38 (999) 999-99-99");
 
 });

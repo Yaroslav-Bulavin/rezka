@@ -917,7 +917,7 @@ input::placeholder {
     line-height: 1.9;
     color: #f3e7e7;
 }
-.footer__tel p span {
+.footer__tel span {
     font-size: 24px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -1264,7 +1264,7 @@ input::placeholder {
     .footer__text {
         font-size: 12px;
     }
-    .footer__tel p span {
+    .footer__tel span {
         font-size: 20px;
     }
 }
@@ -1517,7 +1517,7 @@ input::placeholder {
     }
     .reviews__icon {
         left: 81px;
-        bottom: 205px;
+        bottom: 220px;
     }
     .slider__reviews .slick-dots {
         bottom: 0;
